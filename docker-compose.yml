@@ -7,8 +7,9 @@ services:
     - ./modpacks:/modpacks:ro
     - ./data:/data
     environment:
+      TYPE: PUFFERFISH
       EULA: "true"
-      MEMORY: "1536M"
+      MEMORY: "3G"
       ONLINE_MODE: "false"
       MAX_WORLD_SIZE: "25000"
     ports:

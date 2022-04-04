@@ -1,0 +1,296 @@
+---- Minecraft Crash Report ----
+// Ooh. Shiny.
+
+Time: 4/4/22, 8:09 PM
+Description: Watching Server
+
+java.lang.Error: Watchdog
+	at axy.y(SourceFile:2462)
+	at axy.x(SourceFile:2436)
+	at axy.k(SourceFile:2343)
+	at aya.k(SourceFile:346)
+	at adw.a(SourceFile:702)
+	at adw$$Lambda$4783/0x000000080158a218.accept(Unknown Source)
+	at cav.a(SourceFile:485)
+	at adw.a(SourceFile:363)
+	at adw$$Lambda$4768/0x0000000801581408.accept(Unknown Source)
+	at csm.a(SourceFile:54)
+	at adw.a(SourceFile:331)
+	at net.minecraft.server.MinecraftServer.b(SourceFile:907)
+	at acx.b(SourceFile:322)
+	at net.minecraft.server.MinecraftServer.a(SourceFile:851)
+	at net.minecraft.server.MinecraftServer.w(SourceFile:697)
+	at net.minecraft.server.MinecraftServer.a(SourceFile:273)
+	at net.minecraft.server.MinecraftServer$$Lambda$4268/0x0000000801447820.run(Unknown Source)
+	at java.base@17.0.2/java.lang.Thread.run(Unknown Source)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server Watchdog
+Stacktrace:
+	at axy.y(SourceFile:2462)
+	at axy.x(SourceFile:2436)
+	at axy.k(SourceFile:2343)
+	at aya.k(SourceFile:346)
+	at adw.a(SourceFile:702)
+	at adw$$Lambda$4783/0x000000080158a218.accept(Unknown Source)
+	at cav.a(SourceFile:485)
+	at adw.a(SourceFile:363)
+	at adw$$Lambda$4768/0x0000000801581408.accept(Unknown Source)
+	at csm.a(SourceFile:54)
+	at adw.a(SourceFile:331)
+	at net.minecraft.server.MinecraftServer.b(SourceFile:907)
+	at acx.b(SourceFile:322)
+	at net.minecraft.server.MinecraftServer.a(SourceFile:851)
+	at net.minecraft.server.MinecraftServer.w(SourceFile:697)
+	at net.minecraft.server.MinecraftServer.a(SourceFile:273)
+
+-- Thread Dump --
+Details:
+	Threads: "Reference Handler" daemon prio=10 Id=2 RUNNABLE
+	at java.base@17.0.2/java.lang.ref.Reference.waitForReferencePendingList(Native Method)
+	at java.base@17.0.2/java.lang.ref.Reference.processPendingReferences(Unknown Source)
+	at java.base@17.0.2/java.lang.ref.Reference$ReferenceHandler.run(Unknown Source)
+
+
+"Finalizer" daemon prio=8 Id=3 WAITING on java.lang.ref.ReferenceQueue$Lock@24d6a989
+	at java.base@17.0.2/java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@24d6a989
+	at java.base@17.0.2/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+	at java.base@17.0.2/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+	at java.base@17.0.2/java.lang.ref.Finalizer$FinalizerThread.run(Unknown Source)
+
+
+"Signal Dispatcher" daemon prio=9 Id=4 RUNNABLE
+
+
+"Notification Thread" daemon prio=9 Id=10 RUNNABLE
+
+
+"Common-Cleaner" daemon prio=8 Id=11 TIMED_WAITING on java.lang.ref.ReferenceQueue$Lock@481d6db5
+	at java.base@17.0.2/java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@481d6db5
+	at java.base@17.0.2/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+	at java.base@17.0.2/jdk.internal.ref.CleanerImpl.run(Unknown Source)
+	at java.base@17.0.2/java.lang.Thread.run(Unknown Source)
+	at java.base@17.0.2/jdk.internal.misc.InnocuousThread.run(Unknown Source)
+
+
+"DestroyJavaVM" prio=5 Id=13 RUNNABLE
+
+
+"Timer hack thread" daemon prio=5 Id=20 TIMED_WAITING
+	at java.base@17.0.2/java.lang.Thread.sleep(Native Method)
+	at ad$8.run(SourceFile:784)
+
+
+"Worker-Main-2" daemon prio=5 Id=21 RUNNABLE
+	at java.base@17.0.2/java.util.ArrayList.forEach(Unknown Source)
+	at cua.b(SourceFile:373)
+	at ctz.a(SourceFile:410)
+	at ctz.b(SourceFile:349)
+	at ctz$$Lambda$5137/0x00000008015f1e78.get(Unknown Source)
+	at java.base@17.0.2/java.util.concurrent.CompletableFuture$AsyncSupply.run(Unknown Source)
+	at java.base@17.0.2/java.util.concurrent.CompletableFuture$AsyncSupply.exec(Unknown Source)
+	at java.base@17.0.2/java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	...
+
+
+"Server thread" prio=5 Id=22 RUNNABLE
+	at axy.y(SourceFile:2462)
+	at axy.x(SourceFile:2436)
+	at axy.k(SourceFile:2343)
+	at aya.k(SourceFile:346)
+	at adw.a(SourceFile:702)
+	at adw$$Lambda$4783/0x000000080158a218.accept(Unknown Source)
+	at cav.a(SourceFile:485)
+	at adw.a(SourceFile:363)
+	...
+
+
+"Server console handler" daemon prio=5 Id=24 RUNNABLE (in native)
+	at java.base@17.0.2/java.io.FileInputStream.readBytes(Native Method)
+	at java.base@17.0.2/java.io.FileInputStream.read(Unknown Source)
+	at java.base@17.0.2/java.io.BufferedInputStream.read1(Unknown Source)
+	at java.base@17.0.2/java.io.BufferedInputStream.read(Unknown Source)
+	-  locked java.io.BufferedInputStream@79a8d926
+	at java.base@17.0.2/sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+	at java.base@17.0.2/sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+	at java.base@17.0.2/sun.nio.cs.StreamDecoder.read(Unknown Source)
+	-  locked java.io.InputStreamReader@1968e789
+	at java.base@17.0.2/java.io.InputStreamReader.read(Unknown Source)
+	...
+
+
+"Netty Epoll Server IO #0" daemon prio=5 Id=25 RUNNABLE
+	at io.netty.channel.epoll.Native.epollWait(Native Method)
+	at io.netty.channel.epoll.Native.epollWait(Native.java:192)
+	at io.netty.channel.epoll.Native.epollWait(Native.java:185)
+	at io.netty.channel.epoll.EpollEventLoop.epollWaitNoTimerChange(EpollEventLoop.java:290)
+	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:347)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at java.base@17.0.2/java.lang.Thread.run(Unknown Source)
+
+
+"Netty Epoll Server IO #1" daemon prio=5 Id=28 RUNNABLE
+	at io.netty.channel.epoll.Native.epollWait(Native Method)
+	at io.netty.channel.epoll.Native.epollWait(Native.java:192)
+	at io.netty.channel.epoll.Native.epollWait(Native.java:185)
+	at io.netty.channel.epoll.EpollEventLoop.epollWaitNoTimerChange(EpollEventLoop.java:290)
+	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:347)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at java.base@17.0.2/java.lang.Thread.run(Unknown Source)
+
+
+"RCON Listener #1" prio=5 Id=30 RUNNABLE
+	at java.base@17.0.2/sun.nio.ch.Net.poll(Native Method)
+	at java.base@17.0.2/sun.nio.ch.NioSocketImpl.park(Unknown Source)
+	at java.base@17.0.2/sun.nio.ch.NioSocketImpl.timedAccept(Unknown Source)
+	at java.base@17.0.2/sun.nio.ch.NioSocketImpl.accept(Unknown Source)
+	at java.base@17.0.2/java.net.ServerSocket.implAccept(Unknown Source)
+	at java.base@17.0.2/java.net.ServerSocket.platformImplAccept(Unknown Source)
+	at java.base@17.0.2/java.net.ServerSocket.implAccept(Unknown Source)
+	at java.base@17.0.2/java.net.ServerSocket.implAccept(Unknown Source)
+	...
+
+	Number of locked synchronizers = 1
+	- java.util.concurrent.locks.ReentrantLock$NonfairSync@f4d49bd
+
+
+"Server Watchdog" daemon prio=5 Id=31 RUNNABLE
+	at java.management@17.0.2/sun.management.ThreadImpl.dumpThreads0(Native Method)
+	at java.management@17.0.2/sun.management.ThreadImpl.dumpAllThreads(Unknown Source)
+	at java.management@17.0.2/sun.management.ThreadImpl.dumpAllThreads(Unknown Source)
+	at ada.run(SourceFile:49)
+	at java.base@17.0.2/java.lang.Thread.run(Unknown Source)
+
+
+"Netty Epoll Server IO #2" daemon prio=5 Id=32 RUNNABLE
+	at io.netty.channel.epoll.Native.epollWait(Native Method)
+	at io.netty.channel.epoll.Native.epollWait(Native.java:192)
+	at io.netty.channel.epoll.Native.epollWait(Native.java:185)
+	at io.netty.channel.epoll.EpollEventLoop.epollWaitNoTimerChange(EpollEventLoop.java:290)
+	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:347)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at java.base@17.0.2/java.lang.Thread.run(Unknown Source)
+
+
+"Netty Epoll Server IO #3" daemon prio=5 Id=33 RUNNABLE
+	at io.netty.channel.epoll.Native.epollWait(Native Method)
+	at io.netty.channel.epoll.Native.epollWait(Native.java:192)
+	at io.netty.channel.epoll.Native.epollWait(Native.java:185)
+	at io.netty.channel.epoll.EpollEventLoop.epollWaitNoTimerChange(EpollEventLoop.java:290)
+	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:347)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at java.base@17.0.2/java.lang.Thread.run(Unknown Source)
+
+
+"Worker-Main-10" daemon prio=5 Id=38 WAITING on java.util.concurrent.ForkJoinPool@2c1efd24
+	at java.base@17.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@2c1efd24
+	at java.base@17.0.2/java.util.concurrent.locks.LockSupport.park(Unknown Source)
+	at java.base@17.0.2/java.util.concurrent.ForkJoinPool.awaitWork(Unknown Source)
+	at java.base@17.0.2/java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.base@17.0.2/java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+
+
+"IO-Worker-26" prio=5 Id=54 TIMED_WAITING on java.util.concurrent.SynchronousQueue$TransferStack@13407068
+	at java.base@17.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.SynchronousQueue$TransferStack@13407068
+	at java.base@17.0.2/java.util.concurrent.locks.LockSupport.parkNanos(Unknown Source)
+	at java.base@17.0.2/java.util.concurrent.SynchronousQueue$TransferStack.transfer(Unknown Source)
+	at java.base@17.0.2/java.util.concurrent.SynchronousQueue.poll(Unknown Source)
+	at java.base@17.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+	at java.base@17.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base@17.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base@17.0.2/java.lang.Thread.run(Unknown Source)
+
+
+"IO-Worker-29" prio=5 Id=57 TIMED_WAITING on java.util.concurrent.SynchronousQueue$TransferStack@13407068
+	at java.base@17.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.SynchronousQueue$TransferStack@13407068
+	at java.base@17.0.2/java.util.concurrent.locks.LockSupport.parkNanos(Unknown Source)
+	at java.base@17.0.2/java.util.concurrent.SynchronousQueue$TransferStack.transfer(Unknown Source)
+	at java.base@17.0.2/java.util.concurrent.SynchronousQueue.poll(Unknown Source)
+	at java.base@17.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+	at java.base@17.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base@17.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base@17.0.2/java.lang.Thread.run(Unknown Source)
+
+
+"IO-Worker-30" prio=5 Id=58 TIMED_WAITING on java.util.concurrent.SynchronousQueue$TransferStack@13407068
+	at java.base@17.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.SynchronousQueue$TransferStack@13407068
+	at java.base@17.0.2/java.util.concurrent.locks.LockSupport.parkNanos(Unknown Source)
+	at java.base@17.0.2/java.util.concurrent.SynchronousQueue$TransferStack.transfer(Unknown Source)
+	at java.base@17.0.2/java.util.concurrent.SynchronousQueue.poll(Unknown Source)
+	at java.base@17.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+	at java.base@17.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base@17.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base@17.0.2/java.lang.Thread.run(Unknown Source)
+
+
+"IO-Worker-31" prio=5 Id=59 TIMED_WAITING on java.util.concurrent.SynchronousQueue$TransferStack@13407068
+	at java.base@17.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.SynchronousQueue$TransferStack@13407068
+	at java.base@17.0.2/java.util.concurrent.locks.LockSupport.parkNanos(Unknown Source)
+	at java.base@17.0.2/java.util.concurrent.SynchronousQueue$TransferStack.transfer(Unknown Source)
+	at java.base@17.0.2/java.util.concurrent.SynchronousQueue.poll(Unknown Source)
+	at java.base@17.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+	at java.base@17.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base@17.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base@17.0.2/java.lang.Thread.run(Unknown Source)
+
+
+
+Stacktrace:
+	at ada.run(SourceFile:65)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+-- Performance stats --
+Details:
+	Random tick rate: 3
+	Level stats: ResourceKey[minecraft:dimension / minecraft:overworld]: players: 6, entities: 900,895,558,2070,2070,0,0 [minecraft:creeper:98,minecraft:skeleton:96,minecraft:zombie:93,minecraft:item:85,minecraft:sheep:78], block_entities: 226 [minecraft:mob_spawner:178,minecraft:beehive:43,minecraft:furnace:3,minecraft:bell:2], block_ticks: 61893, fluid_ticks: 667, chunk_source: Chunks[S] W: 7550 E: 900,895,558,2070,2070,0,0,
+ResourceKey[minecraft:dimension / minecraft:the_end]: players: 0, entities: 0,0,0,0,0,0,0 [], block_entities: 0 [], block_ticks: 0, fluid_ticks: 0, chunk_source: Chunks[S] W: 0 E: 0,0,0,0,0,0,0,
+ResourceKey[minecraft:dimension / minecraft:the_nether]: players: 0, entities: 0,0,0,0,0,0,0 [], block_entities: 0 [], block_ticks: 0, fluid_ticks: 0, chunk_source: Chunks[S] W: 0 E: 0,0,0,0,0,0,0
+
+-- System Details --
+Details:
+	Minecraft Version: 1.18.2
+	Minecraft Version ID: 1.18.2
+	Operating System: Linux (amd64) version 5.10.102-99.473.amzn2.x86_64
+	Java Version: 17.0.2, Eclipse Adoptium
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Eclipse Adoptium
+	Memory: 377317712 bytes (359 MiB) / 1610612736 bytes (1536 MiB) up to 1610612736 bytes (1536 MiB)
+	CPUs: 2
+	Processor Vendor: GenuineIntel
+	Processor Name: Intel(R) Xeon(R) CPU E5-2676 v3 @ 2.40GHz
+	Identifier: Intel64 Family 6 Model 63 Stepping 2
+	Microarchitecture: Haswell (Server)
+	Frequency (GHz): 2.40
+	Number of physical packages: 1
+	Number of physical CPUs: 2
+	Number of logical CPUs: 2
+	Graphics card #0 name: unknown
+	Graphics card #0 vendor: unknown
+	Graphics card #0 VRAM (MB): 0.00
+	Graphics card #0 deviceId: unknown
+	Graphics card #0 versionInfo: unknown
+	Virtual memory max (MB): 1960.32
+	Virtual memory used (MB): 2556.18
+	Swap memory total (MB): 0.00
+	Swap memory used (MB): 0.00
+	JVM Flags: 2 total; -Xmx1536M -Xms1536M
+	Server Running: true
+	Player Count: 6 / 20; [adx['GAY_HUNTER'/80, l='ServerLevel[world]', x=-375.49, y=26.88, z=-971.52], adx['TARAS'/584, l='ServerLevel[world]', x=-291.24, y=83.00, z=-1446.73], adx['Illia'/769, l='ServerLevel[world]', x=1851.54, y=72.00, z=-324.30], adx['dima23008'/407, l='ServerLevel[world]', x=98.77, y=79.00, z=-815.62], adx['smertnik'/287, l='ServerLevel[world]', x=97.76, y=77.00, z=-812.99], adx['qusarber'/292, l='ServerLevel[world]', x=100.80, y=72.00, z=-1005.44]]
+	Data Packs: vanilla
+	World Generation: Stable
+	Is Modded: Probably not. Server jar signature and brand is untouched
+	Type: Dedicated Server (map_server.txt)

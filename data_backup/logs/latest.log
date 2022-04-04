@@ -1,0 +1,118 @@
+[20:30:56] [ServerMain/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[20:30:56] [ServerMain/INFO]: Found new data pack file/bukkit, loading it automatically
+[20:30:58] [Worker-Main-1/INFO]: Loaded 7 recipes
+[20:31:00] [Server thread/INFO]: Starting minecraft server version 1.18.2
+[20:31:00] [Server thread/INFO]: Loading properties
+[20:31:00] [Server thread/INFO]: This server is running Pufferfish version git-Pufferfish-60 (MC: 1.18.2) (Implementing API version 1.18.2-R0.1-SNAPSHOT) (Git: 1d94256 on HEAD)
+[20:31:00] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[20:31:00] [Server thread/INFO]: Using 4 threads for Netty based IO
+[20:31:00] [Server thread/WARN]: [Pufferfish] To improve performance, timings have been disabled by default
+[20:31:00] [Server thread/WARN]: [Pufferfish] You can still use timings by using /timings on, but they will not start on server startup unless you set timings.really-enabled to true in paper.yml
+[20:31:00] [Server thread/WARN]: [Pufferfish] If you would like to disable this message, either set timings.really-enabled to true or timings.enabled to false.
+[20:31:00] [Server thread/WARN]: [Pufferfish] SIMD operations are available for your server, but are not configured!
+[20:31:00] [Server thread/WARN]: [Pufferfish] To enable additional optimizations, add "--add-modules=jdk.incubator.vector" to your startup flags, BEFORE the "-jar".
+[20:31:00] [Server thread/INFO]: Default game type: SURVIVAL
+[20:31:00] [Server thread/INFO]: Generating keypair
+[20:31:00] [Server thread/INFO]: Starting Minecraft server on *:25565
+[20:31:00] [Server thread/INFO]: Using epoll channel type
+[20:31:00] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
+[20:31:00] [Server thread/INFO]: Paper: Using OpenSSL 1.1.x (Linux x86_64) cipher from Velocity.
+[20:31:00] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[20:31:00] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[20:31:00] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[20:31:00] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[20:31:00] [Server thread/INFO]: Preparing level "world"
+[20:31:07] [Server thread/INFO]: ---- Migration of old nether folder required ----
+[20:31:07] [Server thread/INFO]: Unfortunately due to the way that Minecraft implemented multiworld support in 1.6, Bukkit requires that you move your nether folder to a new location in order to operate correctly.
+[20:31:07] [Server thread/INFO]: We will move this folder for you, but it will mean that you need to move it back should you wish to stop using Bukkit in the future.
+[20:31:07] [Server thread/INFO]: Attempting to move world/DIM-1 to world_nether/DIM-1...
+[20:31:07] [Server thread/INFO]: Success! To restore nether in the future, simply move world_nether/DIM-1 to world/DIM-1
+[20:31:07] [Server thread/INFO]: ---- Migration of old nether folder complete ----
+[20:31:08] [Server thread/INFO]: ---- Migration of old the_end folder required ----
+[20:31:08] [Server thread/INFO]: Unfortunately due to the way that Minecraft implemented multiworld support in 1.6, Bukkit requires that you move your the_end folder to a new location in order to operate correctly.
+[20:31:08] [Server thread/INFO]: We will move this folder for you, but it will mean that you need to move it back should you wish to stop using Bukkit in the future.
+[20:31:08] [Server thread/INFO]: Attempting to move world/DIM1 to world_the_end/DIM1...
+[20:31:08] [Server thread/INFO]: Success! To restore the_end in the future, simply move world_the_end/DIM1 to world/DIM1
+[20:31:08] [Server thread/INFO]: ---- Migration of old the_end folder complete ----
+[20:31:08] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[20:31:10] [Server thread/INFO]: Preparing spawn area: 0%
+[20:31:10] [Server thread/INFO]: Preparing spawn area: 0%
+[20:31:10] [Server thread/INFO]: Preparing spawn area: 0%
+[20:31:10] [Server thread/INFO]: Preparing spawn area: 0%
+[20:31:10] [Server thread/INFO]: Preparing spawn area: 0%
+[20:31:11] [Server thread/INFO]: Preparing spawn area: 0%
+[20:31:11] [Server thread/INFO]: Preparing spawn area: 0%
+[20:31:12] [Server thread/INFO]: Preparing spawn area: 0%
+[20:31:12] [Server thread/INFO]: Preparing spawn area: 0%
+[20:31:13] [Server thread/INFO]: Preparing spawn area: 0%
+[20:31:13] [Server thread/INFO]: Preparing spawn area: 0%
+[20:31:14] [Server thread/INFO]: Preparing spawn area: 0%
+[20:31:14] [Server thread/INFO]: Preparing spawn area: 0%
+[20:31:15] [Server thread/INFO]: Preparing spawn area: 0%
+[20:31:15] [Server thread/INFO]: Preparing spawn area: 0%
+[20:31:16] [Server thread/INFO]: Time elapsed: 7496 ms
+[20:31:16] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[20:31:17] [Server thread/INFO]: Time elapsed: 1468 ms
+[20:31:17] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[20:31:18] [Server thread/INFO]: Time elapsed: 817 ms
+[20:31:18] [Server thread/INFO]: Starting remote control listener
+[20:31:18] [Server thread/INFO]: Thread RCON Listener started
+[20:31:18] [Server thread/INFO]: RCON running on 0.0.0.0:25575
+[20:31:18] [Server thread/INFO]: Running delayed init tasks
+[20:31:18] [Server thread/INFO]: Done (18.712s)! For help, type "help"
+[20:31:18] [Server thread/INFO]: Timings Reset
+[20:31:30] [User Authenticator #1/INFO]: UUID of player GAY_HUNTER is 11a174c3-e99a-3ef8-ad31-4ad611bda664
+[20:31:33] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 5803ms or 116 ticks behind
+[20:32:09] [Server thread/INFO]: GAY_HUNTER joined the game
+[20:32:09] [Server thread/INFO]: GAY_HUNTER[/194.187.155.161:57697] logged in with entity id 10 at ([world]-375.4901589738086, 26.875, -971.5216585332137)
+[20:32:52] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 5056ms or 101 ticks behind
+[20:33:15] [User Authenticator #2/INFO]: UUID of player qusarber is ac835c77-10f2-3b5a-b9c1-e1a6871da33a
+[20:33:20] [User Authenticator #2/INFO]: UUID of player smertnik is 7b1aba47-1b2e-38db-b30c-892f01a0b702
+[20:33:39] [Server thread/INFO]: qusarber lost connection: Disconnected
+[20:33:42] [Server thread/INFO]: smertnik joined the game
+[20:33:42] [Server thread/INFO]: smertnik[/194.44.45.126:50062] logged in with entity id 399 at ([world]97.3500469925921, 76.76636799395752, -812.9867741390909)
+[20:33:48] [User Authenticator #2/INFO]: UUID of player qusarber is ac835c77-10f2-3b5a-b9c1-e1a6871da33a
+[20:33:49] [Server thread/INFO]: qusarber joined the game
+[20:33:49] [Server thread/INFO]: qusarber[/178.133.224.192:59097] logged in with entity id 432 at ([world]100.79834732175752, 72.0, -1005.4447389612402)
+[20:33:57] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 35205ms or 704 ticks behind
+[20:34:38] [User Authenticator #2/INFO]: UUID of player Illia is d6629c9e-68e7-3bff-87ad-4513effe99e4
+[20:35:00] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 33419ms or 668 ticks behind
+[20:35:13] [Server thread/INFO]: Illia joined the game
+[20:35:13] [Server thread/INFO]: Illia[/31.134.85.51:61589] logged in with entity id 617 at ([world]1851.3397167470541, 73.20000004768372, -324.19264329830025)
+[20:35:17] [Server thread/INFO]: smertnik lost connection: Disconnected
+[20:35:17] [Server thread/INFO]: smertnik left the game
+[20:35:20] [User Authenticator #2/INFO]: UUID of player smertnik is 7b1aba47-1b2e-38db-b30c-892f01a0b702
+[20:35:20] [Server thread/INFO]: smertnik joined the game
+[20:35:20] [Server thread/INFO]: smertnik[/194.44.45.126:50065] logged in with entity id 908 at ([world]97.23137338395833, 76.0, -812.9937786048774)
+[20:35:59] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 5088ms or 101 ticks behind
+[20:36:07] [User Authenticator #2/INFO]: UUID of player dima23008 is 37eb897c-de69-379a-abc9-9346632ea69a
+[20:36:08] [Server thread/INFO]: dima23008 joined the game
+[20:36:08] [Server thread/INFO]: dima23008[/194.44.201.154:57617] logged in with entity id 1512 at ([world]98.77080898002059, 79.0, -815.6161738988412)
+[20:37:37] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 68290ms or 1365 ticks behind
+[20:37:45] [Server thread/INFO]: dima23008 issued server command: /help
+[20:38:31] [Server thread/INFO]: Illia lost connection: Disconnected
+[20:38:31] [Server thread/INFO]: Illia left the game
+[20:38:33] [User Authenticator #3/INFO]: UUID of player Illia is d6629c9e-68e7-3bff-87ad-4513effe99e4
+[20:38:33] [Server thread/INFO]: Illia joined the game
+[20:38:33] [Server thread/INFO]: Illia[/31.134.85.51:61604] logged in with entity id 2075 at ([world]1851.1851989597822, 73.04320004463196, -324.17734850282363)
+[20:38:42] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 34851ms or 697 ticks behind
+[20:40:10] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 57490ms or 1149 ticks behind
+[20:42:16] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 5022ms or 100 ticks behind
+[20:43:35] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 49460ms or 989 ticks behind
+[20:43:43] [User Authenticator #4/INFO]: UUID of player TARAS is 8b933374-9136-381f-8009-0e80b1f1435c
+[20:43:53] [Server thread/INFO]: TARAS joined the game
+[20:43:53] [Server thread/INFO]: TARAS[/194.187.155.36:64681] logged in with entity id 4086 at ([world]-291.2369963252544, 83.0, -1446.7264556598664)
+[20:44:59] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 53642ms or 1072 ticks behind
+[20:45:45] [Server thread/INFO]: GAY_HUNTER issued server command: /timings
+[20:45:49] [Server thread/INFO]: smertnik has made the advancement [Sweet Dreams]
+[20:45:55] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 5068ms or 101 ticks behind
+[20:45:56] [Server thread/INFO]: GAY_HUNTER issued server command: /
+[20:46:03] [Server thread/INFO]: GAY_HUNTER issued server command: /bu
+[20:47:36] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 70436ms or 1408 ticks behind
+[20:47:48] [Server thread/INFO]: GAY_HUNTER has made the advancement [Suit Up]
+[20:49:03] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 57397ms or 1147 ticks behind
+[20:49:03] [Server thread/INFO]: GAY_HUNTER has made the advancement [Not Today, Thank You]
+[20:49:34] [Server thread/INFO]: Villager EntityVillager['Villager'/460, uuid='73c921cb-93b0-42e2-8d3e-c1c11a239923', l='ServerLevel[world]', x=79.70, y=67.00, z=-997.49, cpos=[4, -63], tl=9114, v=true] died, message: 'Villager was slain by smertnik'
+[20:49:45] [Server thread/INFO]: dima23008 was killed by Witch using magic
+[20:49:54] [Server thread/INFO]: GAY_HUNTER issued server command: /timings
+[20:50:11] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 38268ms or 765 ticks behind
