@@ -8,10 +8,9 @@ services:
     - ./data:/data
     environment:
       EULA: "true"
-      MEMORY: ""
-      JVM_XX_OPTS: "-XX:MaxRAMPercentage=75"
-      MAX_MEMORY: "1G"
-      INIT_MEMORY: "512M"
+      MEMORY: "1536M"
+      ONLINE_MODE: "false"
+      MAX_WORLD_SIZE: "25000"
     ports:
       - "25565:25565"
 
