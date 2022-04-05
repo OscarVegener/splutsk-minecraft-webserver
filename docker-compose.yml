@@ -7,7 +7,7 @@ services:
     - ./modpacks:/modpacks:ro
     - ./data:/data
     environment:
-      TYPE: PUFFERFISH
+      # TYPE: PUFFERFISH
       EULA: "true"
       MEMORY: "3G"
       ONLINE_MODE: "false"
